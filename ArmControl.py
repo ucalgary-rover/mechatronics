@@ -1,5 +1,5 @@
-from Phidget22.PhidgetException import *
 from Phidget22.Phidget import *
+from Phidget22.PhidgetException import *
 from Phidget22.Devices.Log import *
 from Phidget22.LogLevel import *
 from Phidget22.Devices.Stepper import *
@@ -12,8 +12,7 @@ import traceback
 import time
 
 base_motor_flag = False
-shoulder_motor1_flag = False
-shoulder_motor2_flag = False
+shoulder_motor_flag = False
 elbow_motor_flag = False
 wrist_motor_flag = False
 claw_motor_flag = False
@@ -24,7 +23,7 @@ grip_strength = 20   # % of max
 
 motors = []
 motors_info = []
-motor_flag_list = [base_motor_flag, shoulder_motor1_flag, shoulder_motor2_flag, elbow_motor_flag, wrist_motor_flag, claw_motor_flag]
+motor_flag_list = [base_motor_flag, shoulder_motor_flag, elbow_motor_flag, wrist_motor_flag, claw_motor_flag]
 
 
 def on_press(key):
@@ -39,36 +38,35 @@ def on_press(key):
                 base_motor.setVelocityLimit(-30)
 
         # Shoulder motor movement keys
-        if key.char == 'e' and motor_flag_list[1] == True and motor_flag_list[2] == True:
-            if not shoulder_motor1.getIsMoving():
-                shoulder_motor1.setVelocityLimit(50)
-                shoulder_motor2.setVelocityLimit(-50)
-        elif key.char == 'r' and motor_flag_list[1] == True and motor_flag_list[2] == True:
-            if not shoulder_motor1.getIsMoving():
-                shoulder_motor1.setVelocityLimit(-50)
-                shoulder_motor2.setVelocityLimit(50)
+        if key.char == 'e' and motor_flag_list[1] == True:
+            if not shoulder_motor.getIsMoving():
+                shoulder_motor.setVelocityLimit(50)
+        elif key.char == 'r' and motor_flag_list[1] == True:
+            if not shoulder_motor.getIsMoving():
+                shoulder_motor.setVelocityLimit(-50)
 
         # Elbow motor movement keys
-        if key.char == 'a' and motor_flag_list[3] == True:
+        if key.char == 'a' and motor_flag_list[2] == True:
             if not elbow_motor.getIsMoving():
                 elbow_motor.setVelocityLimit(50)
-        elif key.char == 's' and motor_flag_list[3] == True:
+        elif key.char == 's' and motor_flag_list[2] == True:
             if not elbow_motor.getIsMoving():
                 elbow_motor.setVelocityLimit(-50)
 
         # Wrist motor movement keys
-        if key.char == 'd' and motor_flag_list[4] == True:
+        if key.char == 'd' and motor_flag_list[3] == True:
             if not wrist_motor.getIsMoving():
                 wrist_motor.setVelocityLimit(50)
-        elif key.char == 'f' and motor_flag_list[4] == True:
+        elif key.char == 'f' and motor_flag_list[3] == True:
             if not wrist_motor.getIsMoving():
                 wrist_motor.setVelocityLimit(-50)
 
         # Claw motor movement keys
-        if key.char == 'g' and motor_flag_list[5] == True:
+        if key.char == 'g' and motor_flag_list[4] == True:
             if not claw_motor.getIsMoving():
+                
                 claw_motor.setVelocityLimit(20)
-        elif key.char == 'h' and motor_flag_list[5] == True:
+        elif key.char == 'h' and motor_flag_list[4] == True:
             if not claw_motor.getIsMoving():
                 claw_motor.setVelocityLimit(-20)
 
@@ -81,7 +79,7 @@ def on_press(key):
 
 
 def on_release(key):
-    global base_motor, shoulder_motor1, shoulder_motor2, elbow_motor, wrist_motor, claw_motor, stop_flag
+    global base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor, stop_flag
     try:
         # Base motor off
         if (key.char == 'q' or key.char == 'w') and motor_flag_list[0] == True:
@@ -89,19 +87,18 @@ def on_release(key):
 
         # Shoulder motors off
         if (key.char == 'e' or key.char == 'r') and motor_flag_list[1] == True and motor_flag_list[2] == True:
-            shoulder_motor1.setVelocityLimit(0)
-            shoulder_motor2.setVelocityLimit(0)
+            shoulder_motor.setVelocityLimit(0)
 
         # Elbow motor off
-        if (key.char == 'a' or key.char == 's') and motor_flag_list[3] == True:
+        if (key.char == 'a' or key.char == 's') and motor_flag_list[2] == True:
             elbow_motor.setVelocityLimit(0)
 
         # Wrist motor off
-        if (key.char == 'd' or key.char == 'f') and motor_flag_list[4] == True:
+        if (key.char == 'd' or key.char == 'f') and motor_flag_list[3] == True:
             wrist_motor.setVelocityLimit(0)
 
         # Claw motor off
-        if (key.char == 'g' or key.char == 'h') and motor_flag_list[5] == True:
+        if (key.char == 'g' or key.char == 'h') and motor_flag_list[4] == True:
             claw_motor.setVelocityLimit(0)
 
         # End listener on ESC
@@ -137,7 +134,7 @@ def initialize_motors():
     global motors, motors_info
 
     for i in range(len(motors)):
-        motors[i].setDeviceSerialNumber(627507)
+        motors[i].setDeviceSerialNumber(634722)
         motors[i].setHubPort(i)
         # print("Hub Port Set \n")
         motors[i].setOnAttachHandler(onAttach)
@@ -163,14 +160,12 @@ def initialize_motors():
 # MAIN
 def main():
     
-    global motors, motors_info, base_motor, shoulder_motor1, shoulder_motor2, elbow_motor, wrist_motor, claw_motor, stop_flag
+    global motors, motors_info, base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor, stop_flag
     # Declare and initialize motors and motor info (current limit, holding current, gear ratio)
     base_motor = Stepper()           # Rotates base
     base_motor_info = [2.8, 1, 77]
-    shoulder_motor1 = Stepper()      # Reference motor to rotate shoulder joint
-    shoulder_motor1_info = [2.8, 2.8, 15]
-    shoulder_motor2 = Stepper()      # Support motor to rotate shoulder joint (inverse of shoulder_motor1)
-    shoulder_motor2_info = [2.8, 0, 15]
+    shoulder_motor = Stepper()      # Reference motor to rotate shoulder joint
+    shoulder_motor_info = [2.8, 2.8, 15]
     elbow_motor = Stepper()          # Rotates elbow
     elbow_motor_info = [2.8, 1, 15]
     wrist_motor = Stepper()          # Rotates wrist
@@ -179,8 +174,8 @@ def main():
     claw_motor_info = [0.67 * grip_strength / 100, 0, 100]
     
     # Note that the order of these matters in the .setHubPort initialization
-    motors = [base_motor, shoulder_motor1, shoulder_motor2, elbow_motor, wrist_motor, claw_motor]
-    motors_info = [base_motor_info, shoulder_motor1_info, shoulder_motor2_info, elbow_motor_info, wrist_motor_info, claw_motor_info]
+    motors = [base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor]
+    motors_info = [base_motor_info, shoulder_motor_info, elbow_motor_info, wrist_motor_info, claw_motor_info]
     
 
     try:
@@ -191,11 +186,6 @@ def main():
         listener.start()
 
         while(stop_flag == False):
-            isMoving = claw_motor.getIsMoving()
-            print("IsMoving: " + str(isMoving))
-            print("Position: " + str(claw_motor.getPosition()))
-            print("Velocity: " + str(claw_motor.getVelocity()))
-            print("")
             time.sleep(1)
 
         for i in range(len(motors)):
@@ -214,6 +204,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-
-
