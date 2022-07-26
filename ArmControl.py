@@ -19,7 +19,11 @@ claw_motor_flag = False
 
 stop_flag = False
 
+VHubSerial = 634722 #627531 #563134
+
 grip_strength = 20   # % of max
+
+smoothing = 0.001   # Controls how quickly motors change from moving to stopping
 
 motors = []
 motors_info = []
@@ -38,10 +42,10 @@ def on_press(key):
                 base_motor.setVelocityLimit(-30)
 
         # Shoulder motor movement keys
-        if key.char == 'e' and motor_flag_list[1] == True:
+        if key.char == 'r' and motor_flag_list[1] == True:
             if not shoulder_motor.getIsMoving():
                 shoulder_motor.setVelocityLimit(50)
-        elif key.char == 'r' and motor_flag_list[1] == True:
+        elif key.char == 'e' and motor_flag_list[1] == True:
             if not shoulder_motor.getIsMoving():
                 shoulder_motor.setVelocityLimit(-50)
 
@@ -83,22 +87,57 @@ def on_release(key):
     try:
         # Base motor off
         if (key.char == 'q' or key.char == 'w') and motor_flag_list[0] == True:
+            lim = base_motor.getVelocityLimit()
+            base_motor.setVelocityLimit(lim * 3 / 4)
+            time.sleep(smoothing)
+            base_motor.setVelocityLimit(lim / 2)
+            time.sleep(smoothing)
+            base_motor.setVelocityLimit(lim / 4)
+            time.sleep(smoothing)
             base_motor.setVelocityLimit(0)
 
         # Shoulder motors off
-        if (key.char == 'e' or key.char == 'r') and motor_flag_list[1] == True and motor_flag_list[2] == True:
+        if (key.char == 'e' or key.char == 'r') and motor_flag_list[1] == True:
+            lim = shoulder_motor.getVelocityLimit()
+            shoulder_motor.setVelocityLimit(lim * 3 / 4)
+            time.sleep(smoothing)
+            shoulder_motor.setVelocityLimit(lim / 2)
+            time.sleep(smoothing)
+            shoulder_motor.setVelocityLimit(lim / 4)
+            time.sleep(smoothing)
             shoulder_motor.setVelocityLimit(0)
 
         # Elbow motor off
         if (key.char == 'a' or key.char == 's') and motor_flag_list[2] == True:
+            lim = elbow_motor.getVelocityLimit()
+            elbow_motor.setVelocityLimit(lim * 3 / 4)
+            time.sleep(smoothing)
+            elbow_motor.setVelocityLimit(lim / 2)
+            time.sleep(smoothing)
+            elbow_motor.setVelocityLimit(lim / 4)
+            time.sleep(smoothing)
             elbow_motor.setVelocityLimit(0)
 
         # Wrist motor off
         if (key.char == 'd' or key.char == 'f') and motor_flag_list[3] == True:
+            lim = wrist_motor.getVelocityLimit()
+            wrist_motor.setVelocityLimit(lim * 3 / 4)
+            time.sleep(smoothing)
+            wrist_motor.setVelocityLimit(lim / 2)
+            time.sleep(smoothing)
+            wrist_motor.setVelocityLimit(lim / 4)
+            time.sleep(smoothing)
             wrist_motor.setVelocityLimit(0)
 
         # Claw motor off
         if (key.char == 'g' or key.char == 'h') and motor_flag_list[4] == True:
+            lim = claw_motor.getVelocityLimit()
+            claw_motor.setVelocityLimit(lim * 3 / 4)
+            time.sleep(smoothing)
+            claw_motor.setVelocityLimit(lim / 2)
+            time.sleep(smoothing)
+            claw_motor.setVelocityLimit(lim / 4)
+            time.sleep(smoothing)
             claw_motor.setVelocityLimit(0)
 
         # End listener on ESC
@@ -134,7 +173,7 @@ def initialize_motors():
     global motors, motors_info
 
     for i in range(len(motors)):
-        motors[i].setDeviceSerialNumber(634722)
+        motors[i].setDeviceSerialNumber(VHubSerial)
         motors[i].setHubPort(i)
         # print("Hub Port Set \n")
         motors[i].setOnAttachHandler(onAttach)
