@@ -19,6 +19,8 @@ claw_motor_flag = False
 
 stop_flag = False
 
+VHubSerial = 634722 #627531 #563134
+
 grip_strength = 20   # % of max
 
 smoothing = 0.001   # Controls how quickly motors change from moving to stopping
@@ -40,10 +42,10 @@ def on_press(key):
                 base_motor.setVelocityLimit(-30)
 
         # Shoulder motor movement keys
-        if key.char == 'e' and motor_flag_list[1] == True:
+        if key.char == 'r' and motor_flag_list[1] == True:
             if not shoulder_motor.getIsMoving():
                 shoulder_motor.setVelocityLimit(50)
-        elif key.char == 'r' and motor_flag_list[1] == True:
+        elif key.char == 'e' and motor_flag_list[1] == True:
             if not shoulder_motor.getIsMoving():
                 shoulder_motor.setVelocityLimit(-50)
 
@@ -171,7 +173,7 @@ def initialize_motors():
     global motors, motors_info
 
     for i in range(len(motors)):
-        motors[i].setDeviceSerialNumber(634722)
+        motors[i].setDeviceSerialNumber(VHubSerial)
         motors[i].setHubPort(i)
         # print("Hub Port Set \n")
         motors[i].setOnAttachHandler(onAttach)
