@@ -221,7 +221,7 @@ def initialize_motors():
 # MAIN
 def main():
     
-    global motors, motors_info, base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor, stop_flag
+    global motors, motors_info, base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor, stop_flag, encoders, base_encoder, shoulder_encoder, elbow_encoder, wrist_encoder, claw_encoder
     # Declare and initialize motors and motor info (current limit, holding current, gear ratio)
     base_motor = Stepper()           # Rotates base
     base_motor_info = [2.8, 1, 77]
