@@ -3,6 +3,7 @@ from Phidget22.PhidgetException import *
 from Phidget22.Devices.Log import *
 from Phidget22.LogLevel import *
 from Phidget22.Devices.Stepper import *
+from Phidget22.Devices.Encoder import *
 
 from pynput import keyboard
 from pynput.keyboard import Key, Listener
@@ -19,7 +20,8 @@ claw_motor_flag = False
 
 stop_flag = False
 
-VHubSerial = 634722 #627531 #563134
+VHubSerial_motors = 634722 #627531 #563134
+VHubSerial_encoders = 561059
 
 grip_strength = 20   # % of max
 
@@ -28,7 +30,7 @@ smoothing = 0.001   # Controls how quickly motors change from moving to stopping
 motors = []
 motors_info = []
 motor_flag_list = [base_motor_flag, shoulder_motor_flag, elbow_motor_flag, wrist_motor_flag, claw_motor_flag]
-
+encoders = []
 
 def on_press(key):
     
@@ -155,9 +157,12 @@ def on_release(key):
         
 
 # Handlers
-def onAttach(self):
+def onAttach_motor(self):
     print("Motor {0} attached!".format(self.getHubPort()))
     motor_flag_list[self.getHubPort()] = True
+
+def onAttach_encoder(self):
+    print("Encoder {0} attached!".format(self.getHubPort()))
     
 def onDetach(self):
     print("Detach!")
@@ -168,15 +173,32 @@ def onError(self,code, description):
     print("Description: " + str(description))
     print("----------")
 
-# Device Initalization
+#Encoder initialization
+def initialize_encoders():
+    global encoders
+    for i in range(len(encoders)):
+        encoders[i].setDeviceSerialNumber(VHubSerial_encoders)
+        encoders[i].setHubPort(i)
+        encoders[i].setOnAttachHandler(onAttach_encoder)
+        encoders[i].setOnDetachHandler(onDetach)
+        encoders[i].setOnErrorHandler(onError)
+        try:
+            encoders[i].openWaitForAttachment(300)
+        except:
+            print("Encoder " + str(i) + " not attached")
+        if(encoders[i].getAttached() == True):
+
+            encoders[i].setEnabled(True)
+
+# Motor Initalization
 def initialize_motors():
     global motors, motors_info
 
     for i in range(len(motors)):
-        motors[i].setDeviceSerialNumber(VHubSerial)
+        motors[i].setDeviceSerialNumber(VHubSerial_motors)
         motors[i].setHubPort(i)
         # print("Hub Port Set \n")
-        motors[i].setOnAttachHandler(onAttach)
+        motors[i].setOnAttachHandler(onAttach_motor)
         # print("Attach Handler Set\n")
         motors[i].setOnDetachHandler(onDetach)
         motors[i].setOnErrorHandler(onError)
@@ -203,23 +225,34 @@ def main():
     # Declare and initialize motors and motor info (current limit, holding current, gear ratio)
     base_motor = Stepper()           # Rotates base
     base_motor_info = [2.8, 1, 77]
+    base_encoder = Encoder()
+
     shoulder_motor = Stepper()      # Reference motor to rotate shoulder joint
     shoulder_motor_info = [2.8, 2.8, 15]
+    shoulder_encoder = Encoder()
+
     elbow_motor = Stepper()          # Rotates elbow
     elbow_motor_info = [2.8, 1, 15]
+    elbow_encoder = Encoder()
+
     wrist_motor = Stepper()          # Rotates wrist
     wrist_motor_info = [0.67, 0.67, 100]
+    wrist_encoder = Encoder()
+
     claw_motor = Stepper()           # Pinches claw
     claw_motor_info = [0.67 * grip_strength / 100, 0, 100]
+    claw_encoder = Encoder()
     
     # Note that the order of these matters in the .setHubPort initialization
     motors = [base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor]
     motors_info = [base_motor_info, shoulder_motor_info, elbow_motor_info, wrist_motor_info, claw_motor_info]
-    
+    encoders = [base_encoder, shoulder_encoder, elbow_encoder, wrist_encoder, claw_encoder]
 
     try:
         Log.enable(LogLevel.PHIDGET_LOG_INFO, "PhidgetArmLog.log")
+        initialize_encoders()
         initialize_motors()
+
 
         listener = keyboard.Listener(on_press=on_press, on_release=on_release)
         listener.start()
