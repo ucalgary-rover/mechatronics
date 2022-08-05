@@ -175,7 +175,7 @@ def onError(self,code, description):
 
 #Encoder initialization
 def initialize_encoders():
-    global encoders
+    global encoders, base_position, shoulder_position, elbow_position, wrist_position, claw_position
     for i in range(len(encoders)):
         encoders[i].setDeviceSerialNumber(VHubSerial_encoders)
         encoders[i].setHubPort(i)
@@ -189,6 +189,17 @@ def initialize_encoders():
         if(encoders[i].getAttached() == True):
 
             encoders[i].setEnabled(True)
+            #initialize position for each encoder; the relative position based on the arm resting position is set up in main:
+            if (i == 0):
+                base_encoder.setPosition(0)
+            if (i == 1):
+                shoulder_encoder.setPosition(0)
+            if (i == 2):
+                elbow_encoder.setPosition(0)
+            if(i == 3):
+                wrist_encoder.setPosition(0)
+            if(i == 4):
+                claw_encoder.setPosition(0)
 
 # Motor Initalization
 def initialize_motors():
@@ -222,6 +233,7 @@ def initialize_motors():
 def main():
     
     global motors, motors_info, base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor, stop_flag, encoders, base_encoder, shoulder_encoder, elbow_encoder, wrist_encoder, claw_encoder
+    global base_position, elbow_position, shoulder_position, elbow_position, wrist_position, claw_position
     # Declare and initialize motors and motor info (current limit, holding current, gear ratio)
     base_motor = Stepper()           # Rotates base
     base_motor_info = [2.8, 1, 77]
@@ -258,7 +270,16 @@ def main():
         listener.start()
 
         while(stop_flag == False):
-            time.sleep(1)
+            base_position = ((360 * base_encoder.getPosition() / (4*300*77)))
+            shoulder_position = (360 * shoulder_encoder.getPosition() / (4*300*15 * (16/50))) + 40
+            elbow_position = (360 * elbow_encoder.getPosition() / (4*300*15 * (24/50))) + 180
+            wrist_position = (360 * wrist_encoder.getPosition() / (4*300*100))
+            claw_position = (360 * claw_encoder.getPosition() / (4*300*100))
+
+            print("Base Position: " + str(base_position) + "      Shoulder Position: " + str(shoulder_position) + "       Elbow Position: " + str(elbow_position) + "     Wrist Position: " + str(wrist_position) + "     Claw Position: " + str(claw_position))
+
+
+            time.sleep(0.5)
 
         for i in range(len(motors)):
                 if(motors[i].getAttached() == True):
