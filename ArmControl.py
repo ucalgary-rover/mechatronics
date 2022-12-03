@@ -203,7 +203,7 @@ def main():
     # Declare and initialize motors and motor info (current limit, holding current, gear ratio)
     base_motor = Stepper()           # Rotates base
     base_motor_info = [2.8, 1, 77]
-    shoulder_motor = Stepper()      # Reference motor to rotate shoulder joint
+    shoulder_motor = Stepper()       # Rotates shoulder
     shoulder_motor_info = [2.8, 2.8, 15]
     elbow_motor = Stepper()          # Rotates elbow
     elbow_motor_info = [2.8, 1, 15]
