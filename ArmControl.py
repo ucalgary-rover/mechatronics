@@ -21,7 +21,7 @@ stop_flag = False
 
 VHubSerial = 634722 #627531 #563134
 
-grip_strength = 20   # % of max
+grip_strength = 100   # % of max
 
 smoothing = 0.001   # Controls how quickly motors change from moving to stopping
 
