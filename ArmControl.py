@@ -270,11 +270,14 @@ def main():
         listener.start()
 
         while(stop_flag == False):
-            base_position = ((360 * base_encoder.getPosition() / (4*300*77)))
-            shoulder_position = (360 * shoulder_encoder.getPosition() / (4*300*15 * (16/50))) + 40
-            elbow_position = (360 * elbow_encoder.getPosition() / (4*300*15 * (24/50))) + 180
-            wrist_position = (360 * wrist_encoder.getPosition() / (4*300*100))
-            claw_position = (360 * claw_encoder.getPosition() / (4*300*100))
+            #base_position = ((360 * base_encoder.getPosition() / (4*300*77)))
+            base_position = 0
+            shoulder_position = (360 * shoulder_encoder.getPosition() / (4*300*15 * (16/50) * (50/16))) + 40  #Added gear reduction
+            elbow_position = (360 * elbow_encoder.getPosition() / (4*300*15 * (24/50) * (50/24))) + 180   #Added gear reduction
+            #wrist_position = (360 * wrist_encoder.getPosition() / (4*300*100))
+            wrist_position = 0
+            #claw_position = (360 * claw_encoder.getPosition() / (4*300*100))
+            claw_position = 0
 
             print("Base Position: " + str(base_position) + "      Shoulder Position: " + str(shoulder_position) + "       Elbow Position: " + str(elbow_position) + "     Wrist Position: " + str(wrist_position) + "     Claw Position: " + str(claw_position))
 
