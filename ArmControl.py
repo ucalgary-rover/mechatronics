@@ -144,6 +144,14 @@ def on_release(key):
 
         # End listener on ESC
         if key.char == 'p':
+
+            #shutdown sequence 
+
+            # #moving elbow back to resting position
+            # while(elbow_position != elbow_initial_pos):
+            #     elbow_motor.setVelocityLimit(-20)
+
+
             print("Quitting programming...")
 
             for i in range(len(motors)):
@@ -233,8 +241,8 @@ def initialize_motors():
 def main():
     
     global motors, motors_info, base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor, stop_flag, encoders, base_encoder, shoulder_encoder, elbow_encoder, wrist_encoder, claw_encoder
-    global base_position, elbow_position, shoulder_position, elbow_position, wrist_position, claw_position
-    # Declare and initialize motors and motor info (current limit, holding current, gear ratio)
+    global base_position, base_initial_pos, elbow_position, elbow_initial_pos, shoulder_position, shoulder_initial_pos, wrist_position, wrist_initial_pos, claw_position, claw_initial_pos
+    # Declare and initialize motors and motor info (current limit, holding current, gear box ratio, gear ratio)
     base_motor = Stepper()           # Rotates base
     base_motor_info = [2.8, 1, 77]
     base_encoder = Encoder()
@@ -252,7 +260,7 @@ def main():
     wrist_encoder = Encoder()
 
     claw_motor = Stepper()           # Pinches claw
-    claw_motor_info = [0.67 * grip_strength / 100, 0, 100]
+    claw_motor_info = [0.67, 0.67, 100]
     claw_encoder = Encoder()
     
     # Note that the order of these matters in the .setHubPort initialization
@@ -269,20 +277,29 @@ def main():
         listener = keyboard.Listener(on_press=on_press, on_release=on_release)
         listener.start()
 
+        initialization = True
         while(stop_flag == False):
+            #degrees/rev * encoder_count * cycle/count * rev/cycle * 1/gear_box_ratio * gear_ratio(gear_ratio is only for shoulder and elbow) 
             #base_position = ((360 * base_encoder.getPosition() / (4*300*77)))
-            base_position = 0
-            shoulder_position = (360 * shoulder_encoder.getPosition() / (4*300*15 * (16/50) * (50/16))) + 40  #Added gear reduction
-            elbow_position = (360 * elbow_encoder.getPosition() / (4*300*15 * (24/50) * (50/24))) + 180   #Added gear reduction
+            shoulder_position = (360 * shoulder_encoder.getPosition() * 1/4 * 1/300 * 1/15 * (16/50))
+            elbow_position = (360 * elbow_encoder.getPosition() * 1/4* 1/300 * 1/15 * (24/50)) 
             #wrist_position = (360 * wrist_encoder.getPosition() / (4*300*100))
-            wrist_position = 0
             #claw_position = (360 * claw_encoder.getPosition() / (4*300*100))
-            claw_position = 0
 
-            print("Base Position: " + str(base_position) + "      Shoulder Position: " + str(shoulder_position) + "       Elbow Position: " + str(elbow_position) + "     Wrist Position: " + str(wrist_position) + "     Claw Position: " + str(claw_position))
+            if (initialization == True):
+                #base_initial_pos = base_position
+                shoulder_initial_pos = shoulder_position
+                elbow_initial_pos = elbow_position
+                #wrist_initial_pos = wrist_position
+                #claw_initial_pos = 
+
+
+            print("      Shoulder Position: " + str(shoulder_position) + "       Elbow Position: " + str(elbow_position))
 
 
             time.sleep(0.5)
+            initialization = False
+            
 
         for i in range(len(motors)):
                 if(motors[i].getAttached() == True):
