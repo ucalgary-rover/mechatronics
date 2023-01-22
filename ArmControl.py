@@ -23,7 +23,7 @@ stop_flag = False
 VHubSerial_motors = 634722 #627531 #563134
 VHubSerial_encoders = 561059
 
-smoothing = 0.001   # Controls how quickly motors change from moving to stopping
+smoothing = 0.005   # Time delay (in seconds) for a motor to change from moving to stopped
 
 motors = []
 motors_info = []
@@ -90,55 +90,55 @@ def on_release(key):
         if (key.char == 'q' or key.char == 'w') and motor_flag_list[0] == True:
             lim = base_motor.getVelocityLimit()
             base_motor.setVelocityLimit(lim * 3 / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             base_motor.setVelocityLimit(lim / 2)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             base_motor.setVelocityLimit(lim / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             base_motor.setVelocityLimit(0)
 
         # Shoulder motors off
         if (key.char == 'e' or key.char == 'r') and motor_flag_list[1] == True:
             lim = shoulder_motor.getVelocityLimit()
             shoulder_motor.setVelocityLimit(lim * 3 / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             shoulder_motor.setVelocityLimit(lim / 2)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             shoulder_motor.setVelocityLimit(lim / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             shoulder_motor.setVelocityLimit(0)
 
         # Elbow motor off
         if (key.char == 'a' or key.char == 's') and motor_flag_list[2] == True:
             lim = elbow_motor.getVelocityLimit()
             elbow_motor.setVelocityLimit(lim * 3 / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             elbow_motor.setVelocityLimit(lim / 2)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             elbow_motor.setVelocityLimit(lim / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             elbow_motor.setVelocityLimit(0)
 
         # Wrist motor off
         if (key.char == 'd' or key.char == 'f') and motor_flag_list[3] == True:
             lim = wrist_motor.getVelocityLimit()
             wrist_motor.setVelocityLimit(lim * 3 / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             wrist_motor.setVelocityLimit(lim / 2)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             wrist_motor.setVelocityLimit(lim / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             wrist_motor.setVelocityLimit(0)
 
         # Claw motor off
         if (key.char == 'g' or key.char == 'h') and motor_flag_list[4] == True:
             lim = claw_motor.getVelocityLimit()
             claw_motor.setVelocityLimit(lim * 3 / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             claw_motor.setVelocityLimit(lim / 2)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             claw_motor.setVelocityLimit(lim / 4)
-            time.sleep(smoothing)
+            time.sleep(smoothing / 4)
             claw_motor.setVelocityLimit(0)
 
         # End program when 'p' is pressed
@@ -245,7 +245,7 @@ def main():
     # All motors, encoders, and positions are declared as global variables
     global motors, motors_info, base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor, stop_flag, encoders, base_encoder, shoulder_encoder, elbow_encoder, wrist_encoder, claw_encoder
     global base_position, base_initial_pos, elbow_position, elbow_initial_pos, shoulder_position, shoulder_initial_pos, wrist_position, wrist_initial_pos, claw_position, claw_initial_pos
-    
+
     # Declare and initialize motors and motor info (current limit, holding current, gear box ratio, gear ratio)
     # Also declare initial motor positions (based on assumed starting position)
     base_motor = Stepper()
