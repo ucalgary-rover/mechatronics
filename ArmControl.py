@@ -36,11 +36,57 @@ motors_info = []
 motor_flag_list = [base_motor_flag, shoulder_motor_flag, elbow_motor_flag, wrist_motor_flag, claw_motor_flag]
 encoders = []
 
+def homepose():
+    shoulder_test = 1
+    while shoulder_test == 1:
+        if shoulder_position >= 131 and shoulder_position <= 132:
+            print("correct")
+            lim = shoulder_motor.getVelocityLimit()
+            shoulder_motor.setVelocityLimit(lim * 3 / 4)
+            time.sleep(smoothing / 4)
+            shoulder_motor.setVelocityLimit(lim / 2)
+            time.sleep(smoothing / 4)
+            shoulder_motor.setVelocityLimit(lim / 4)
+            time.sleep(smoothing / 4)
+            shoulder_motor.setVelocityLimit(0)
+            shoulder_test = 0
+        elif shoulder_position <= 132:
+            print(f"less {shoulder_position}")
+            shoulder_motor.setVelocityLimit(4)
+        elif shoulder_position >= 131:
+            print(f"more {shoulder_position}")
+            shoulder_motor.setVelocityLimit(-4)
 
+    elbow_test = 1
+    while elbow_test == 1:
+        if elbow_position >= 179 and elbow_position <= 181:
+            print("correct")
+            lim = elbow_motor.getVelocityLimit()
+            elbow_motor.setVelocityLimit(lim * 3 / 4)
+            time.sleep(smoothing / 4)
+            elbow_motor.setVelocityLimit(lim / 2)
+            time.sleep(smoothing / 4)
+            elbow_motor.setVelocityLimit(lim / 4)
+            time.sleep(smoothing / 4) 
+            elbow_motor.setVelocityLimit(0)
+            elbow_test = 0
+        elif elbow_position <= 181:
+            print(f"less {elbow_position}")
+            elbow_motor.setVelocityLimit(5)
+        elif elbow_position >= 179:
+            print(f"more {elbow_position}")
+            elbow_motor.setVelocityLimit(-5)
+    
 # Set motors into motion, function motor.setVelocityLimit() sets speed in degrees / second
 def on_press(key):
 
     try:
+        #Set Arm to home position
+        #Shoulder Position: 131.7408, Elbow Position: 179.952
+        if key.char == 'z':
+            print("key for z works")
+            homepose()
+
         # Base motor movement keys
         if key.char == 'q' and motor_flag_list[0] == True:
             if not base_motor.getIsMoving():
