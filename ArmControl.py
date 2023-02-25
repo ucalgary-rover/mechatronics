@@ -8,8 +8,8 @@ from Phidget22.Devices.Encoder import *
 from pynput import keyboard
 from pynput.keyboard import Key, Listener
 
-#import os
 #import shutil
+#import os
 import traceback
 import time
 
