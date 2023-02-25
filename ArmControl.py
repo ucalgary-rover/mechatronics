@@ -7,10 +7,16 @@ from Phidget22.Devices.Encoder import *
 
 from pynput import keyboard
 from pynput.keyboard import Key, Listener
+
 #import os
 #import shutil
 import traceback
 import time
+
+#Getting today's date, used for logging purposes
+from datetime import datetime
+now = datetime.now()
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
 base_motor_flag = False
 shoulder_motor_flag = False
@@ -147,7 +153,7 @@ def on_release(key):
             # Insert shutdown sequence here
             # moving elbow back to resting position
             # while(elbow_position != elbow_initial_pos):
-            #     elbow_motor.setVelocityLimit(-20)
+            # elbow_motor.setVelocityLimit(-20)
 
             print(f"\nQuitting program...")
 
@@ -182,7 +188,6 @@ def onError(self,code, description):
 
 #Encoder initialization
 def initialize_encoders():
-    global encoders, base_position, shoulder_position, elbow_position, wrist_position, claw_position, base_initial_pos, shoulder_initial_pos, elbow_initial_pos, wrist_initial_pos, claw_initial_pos
     for i in range(len(encoders)):
         encoders[i].setDeviceSerialNumber(VHubSerial_encoders)
         encoders[i].setHubPort(i)
@@ -293,10 +298,18 @@ def main():
         listener = keyboard.Listener(on_press=on_press, on_release=on_release)
         listener.start()
 
+        #Logging
+
+        file = open("PhidgetPositionLog.txt", "a")
+        file.write( "-----------------------------------------------------------------------------\n")
+        file.write(f"-                  Time of Log in: {dt_string}                      -\n")
+        file.write( "-----------------------------------------------------------------------------\n")
+        file.close()
+
         # Main loop of code, stop_flag becomes True when 'p' is pressed
         while(stop_flag == False):
             # Get current motor position from quadrature encoders using this formula:
-            #      encoder_count (reading from encoder) * cycle/count (encoder interface resolution) * rev/cycle (CPR of encoder) * degrees/rev * 1/gear_box_ratio * external_gear_ratio (for shoulder/elbow) 
+            # encoder_count (reading from encoder) * cycle/count (encoder interface resolution) * rev/cycle (CPR of encoder) * degrees/rev * 1/gear_box_ratio * external_gear_ratio (for shoulder/elbow) 
             if(base_encoder.getAttached()):
                 base_position = base_encoder.getPosition() * (1/4) * (1/300) * (360/1) * (1/77) + base_initial_pos
             if(shoulder_encoder.getAttached()):
@@ -310,6 +323,17 @@ def main():
 
             # Print motor position information
             print("      Shoulder Position: " + str(shoulder_position) + "       Elbow Position: " + str(elbow_position))
+            
+            #Adding phidget motor postion information in PhidgetPositionLog.txt
+            file = open("PhidgetPositionLog.txt", "a")
+            file.write(f"\tShoulder Position: {shoulder_position}\t\tElbow Position: {elbow_position}\n")
+            file.close()
+
+            #Creating Phidget csv file
+            file = open("PhidgetPosition.csv", "a")
+            file.write(f"{shoulder_position},{elbow_position}\n")
+            file.close()
+
             # Test to prove that motor.getPosition() gives accurate position readings (in degrees) when compared to encoder readings
             #print("      Motor Shoulder Position: " + str(shoulder_motor.getPosition() + 130) + "      Motor Elbow Position: " + str(elbow_motor.getPosition() + 180))
 
