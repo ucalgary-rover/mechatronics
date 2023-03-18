@@ -4198,4 +4198,1060 @@
 2022-12-03T15:11:38.755  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
 2022-12-03T15:11:38.764  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 4 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
 2022-12-03T15:11:38.765  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
-2022-12-03T15:11:38.768  <Info> phidget22usb[PhidgetUSBCloseHandle()] : Closing USB Device: 0x8ac
+2022-12-03T15:11:38.768  <Info> phidget22usb[PhidgetUSBCloseHandle()] : Closing USB Device: 0x8ac2023-02-04T12:27:37  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:15                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-04T12:43:11  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:15                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-04T12:43:11  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008603 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-04T12:43:11  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T12:43:11  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008b03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-04T12:43:11  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T12:43:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-04T12:43:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-04T12:43:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-04T12:43:11  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T12:43:11  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T12:43:12  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008b03
+2023-02-04T12:43:12  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-04T12:43:12  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x6c90b000
+2023-02-04T12:43:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T12:43:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T12:43:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T12:43:13  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008603
+2023-02-04T12:43:13  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6cd17000
+2023-02-04T12:43:13  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T12:43:13  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T12:49:30  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T12:49:30  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T12:49:30  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-04T12:49:30  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-04T12:59:26  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:15                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-04T12:59:26  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009f03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-04T12:59:26  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T12:59:26  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008903 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-04T12:59:26  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T12:59:26  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-04T12:59:26  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-04T12:59:26  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-04T12:59:26  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T12:59:26  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T12:59:26  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008903
+2023-02-04T12:59:26  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-04T12:59:26  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x6ba7b000
+2023-02-04T12:59:27  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T12:59:27  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T12:59:27  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T12:59:28  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-04T12:59:28  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6caab000
+2023-02-04T12:59:28  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T12:59:28  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-04T12:59:28  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-04T12:59:28  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T12:59:28  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T12:59:28  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T12:59:28  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T12:59:28  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-04T12:59:28  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6caab000
+2023-02-04T12:59:28  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T12:59:28  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:00:37  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:15                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-04T13:00:37  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a203 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-04T13:00:37  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:00:37  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009f03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-04T13:00:37  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T13:00:37  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-04T13:00:37  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-04T13:00:37  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-04T13:00:37  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T13:00:37  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T13:00:37  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-04T13:00:37  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-04T13:00:37  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x6c57f000
+2023-02-04T13:00:37  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T13:00:37  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T13:00:38  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T13:00:38  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a203
+2023-02-04T13:00:38  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6c98b000
+2023-02-04T13:00:38  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:00:39  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:08:27  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:08:27  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:08:27  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-04T13:08:27  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-04T13:44:01  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:15                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-04T13:44:01  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009f03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-04T13:44:01  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:44:01  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009c03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-04T13:44:01  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T13:44:01  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-04T13:44:01  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-04T13:44:01  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-04T13:44:01  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T13:44:01  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T13:44:02  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009c03
+2023-02-04T13:44:02  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-04T13:44:02  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x6ef6b000
+2023-02-04T13:44:02  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T13:44:02  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T13:44:02  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T13:44:03  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-04T13:44:03  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6fb8f000
+2023-02-04T13:44:03  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:44:03  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:44:47  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:44:47  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T13:44:47  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-04T13:44:47  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-04T14:04:50  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:15                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-04T14:04:50  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009f03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-04T14:04:50  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:04:50  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008703 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-04T14:04:50  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:04:50  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-04T14:04:50  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-04T14:04:50  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-04T14:04:50  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T14:04:50  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T14:04:50  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008703
+2023-02-04T14:04:50  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-04T14:04:50  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x6d183000
+2023-02-04T14:04:50  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:04:50  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:04:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:04:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-04T14:04:51  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6d58f000
+2023-02-04T14:04:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:04:52  <Warn> phidget22[waitForPendingPacket()] : Packet tracker waitForPendingPacket timeout (1000ms), Port 1
+2023-02-04T14:04:52 <ERROR> phidget22[PhidgetVINTDevice_bridgeInput()] : Failed to send VINT_PACKET_TYPE_PHIDGET_RESET message: 0x03 - Timed Out
+2023-02-04T14:04:52 <ERROR> phidget22[dispatchEntry()] : Failed to send BP_OPENRESET to device for Bipolar Stepper Controller Ch:0 -> STC1003 -> HUB0000 Port:1 S/N:634722: 0x03 - Timed Out
+2023-02-04T14:04:52 <ERROR> phidget22[PhidgetVINTDevice_bridgeInput()] : Failed to send VINT_PACKET_TYPE_PHIDGET_RESET message: 0x34 - Device not Attached
+2023-02-04T14:04:52 <ERROR> phidget22[Phidget_close()] : Failed to send BP_CLOSERESET to device: 0x34 - Device not Attached
+2023-02-04T14:04:52  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-04T14:04:52  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-04T14:04:53  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T14:04:53  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T14:04:53  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T14:04:53  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T14:04:53  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-04T14:04:53  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6d58f000
+2023-02-04T14:04:53  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:04:54  <Warn> phidget22[waitForPendingPacket()] : Packet tracker waitForPendingPacket timeout (1000ms), Port 2
+2023-02-04T14:04:54 <ERROR> phidget22[PhidgetVINTDevice_bridgeInput()] : Failed to send VINT_PACKET_TYPE_PHIDGET_RESET message: 0x03 - Timed Out
+2023-02-04T14:04:54 <ERROR> phidget22[dispatchEntry()] : Failed to send BP_OPENRESET to device for Bipolar Stepper Controller Ch:0 -> STC1003 -> HUB0000 Port:2 S/N:634722: 0x03 - Timed Out
+2023-02-04T14:04:54  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-04T14:04:54  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-04T14:04:54 <ERROR> phidget22[PhidgetVINTDevice_bridgeInput()] : Failed to send VINT_PACKET_TYPE_PHIDGET_RESET message: 0x34 - Device not Attached
+2023-02-04T14:04:54 <ERROR> phidget22[Phidget_close()] : Failed to send BP_CLOSERESET to device: 0x34 - Device not Attached
+2023-02-04T14:05:28  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:15                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-04T14:05:28  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008903 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-04T14:05:28  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:05:28  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009f03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-04T14:05:28  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:05:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-04T14:05:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-04T14:05:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-04T14:05:28  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T14:05:28  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T14:05:28  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-04T14:05:28  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-04T14:05:28  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x6c61b000
+2023-02-04T14:05:28  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:05:28  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:05:29  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:05:29  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008903
+2023-02-04T14:05:29  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6ca27000
+2023-02-04T14:05:29  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:05:30  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:05:30  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T14:05:30  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T14:05:30  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:07:58  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:15                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-04T14:07:58  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a103 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-04T14:07:58  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:07:58  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009d03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-04T14:07:58  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:07:58  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-04T14:07:58  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-04T14:07:58  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-04T14:07:58  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-04T14:07:58  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-04T14:07:58  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009d03
+2023-02-04T14:07:58  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-04T14:07:58  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x6ef5f000
+2023-02-04T14:07:58  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:07:58  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:07:59  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-04T14:07:59  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a103
+2023-02-04T14:07:59  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x6f36b000
+2023-02-04T14:07:59  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:08:00  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:13:45  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:13:45  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-04T14:13:45  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-04T14:13:45  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T12:53:16  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T12:53:16  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009d03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T12:53:16  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T12:53:16  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009a03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T12:53:16  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T12:53:16  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T12:53:16  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T12:53:16  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T12:53:16  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T12:53:16  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T12:53:17  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009a03
+2023-02-25T12:53:17  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T12:53:17  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0ca6b000
+2023-02-25T12:53:17  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T12:53:17  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T12:53:17  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T12:53:18  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009d03
+2023-02-25T12:53:18  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0d674000
+2023-02-25T12:53:18  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T12:53:18  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T12:55:24  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T12:55:24  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T12:55:24  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T12:55:24  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:02:39  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:02:39  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009f03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:02:39  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:02:39  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009c03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:02:39  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:02:39  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:02:39  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:02:39  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:02:39  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:02:39  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:02:39  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009c03
+2023-02-25T13:02:39  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:02:39  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x04db3000
+2023-02-25T13:02:39  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:02:40  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:02:40  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:02:41  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-25T13:02:41  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x055b9000
+2023-02-25T13:02:41  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:02:41  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:02:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:02:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:02:49  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:02:49  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:12:28  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:12:28  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008903 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:12:28  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:12:28  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009b03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:12:28  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:12:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:12:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:12:28  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:12:28  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:12:28  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009b03
+2023-02-25T13:12:28  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:12:28  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0b89a000
+2023-02-25T13:12:28  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:12:29  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:12:29 <ERROR> phidget22usb[PhidgetUSBSendPacket()] : USB Write returned an unexpected error: 0xe00002eb - Operation was aborted
+2023-02-25T13:12:29 <ERROR> phidget22[sendpacket()] : PhidgetUSBSendPacket() returned: 0x1c - Unexpected Error
+2023-02-25T13:12:29  <Warn> phidget22[PhidgetUSBError()] : Resetting device because of USB error.
+2023-02-25T13:12:29 <ERROR> phidget22[PhidgetVINTDevice_bridgeInput()] : Failed to send VINT_PACKET_TYPE_PHIDGET_ENABLE message: 0x1c - Unexpected Error
+2023-02-25T13:12:29  <Info> phidget22usb[RawDeviceRemoved()] : USB Phidget Detach: 0x00009b03
+2023-02-25T13:12:29 <ERROR> phidget22[dispatchEntry()] : Failed to send BP_ENABLE to device for PhidgetEncoder: 0x1c - Unexpected Error
+2023-02-25T13:12:29  <Info> phidget22[deviceDetach()] : (Detach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22[deviceDetach()] : (Detach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22[deviceDetach()] : (Detach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22[deviceDetach()] : (Detach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00015703 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:12:29  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:12:29  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00015703
+2023-02-25T13:12:29  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:12:29  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0b89a000
+2023-02-25T13:12:29  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:30  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008903
+2023-02-25T13:12:30  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0c0a0000
+2023-02-25T13:12:30  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:12:30  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:12:48  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:12:48  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a403 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:12:48  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:48  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009403 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:12:48  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:12:48  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:12:48  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:12:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:12:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:12:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:12:48  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a403
+2023-02-25T13:12:48  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:12:48  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0ba9d000
+2023-02-25T13:12:48  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:48  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:12:49  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009403
+2023-02-25T13:12:49  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0bea0000
+2023-02-25T13:12:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:12:50  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:14:48  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:14:48  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008a03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:14:48  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:14:48  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008e03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:14:48  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:14:48  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:14:48  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:14:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:14:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:14:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:14:49  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008a03
+2023-02-25T13:14:49  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:14:49  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0c508000
+2023-02-25T13:14:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:14:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:14:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:14:50  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008e03
+2023-02-25T13:14:50  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0c90b000
+2023-02-25T13:14:50  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:14:50  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:15:10  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:15:10  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:15:10  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:15:10  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:25:45  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:25:45  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008d03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:25:45  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:25:45  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009203 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:25:45  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:25:45  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:25:45  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:25:45  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:25:45  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:25:45  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:25:45  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008d03
+2023-02-25T13:25:45  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:25:45  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x087ef000
+2023-02-25T13:25:45  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:25:46  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:25:46  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:25:46  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009203
+2023-02-25T13:25:47  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x08bf2000
+2023-02-25T13:25:47  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:25:47  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:26:21  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:26:21  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:26:21  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:26:21  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:30:46  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:30:46  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a103 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:30:46  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:30:46  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008e03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:30:46  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:30:46  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:30:46  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:30:46  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:30:46  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:30:46  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:30:47  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a103
+2023-02-25T13:30:47  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:30:47  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0bbd3000
+2023-02-25T13:30:47  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:30:47  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:30:47  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:30:48  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008e03
+2023-02-25T13:30:48  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0bfd6000
+2023-02-25T13:30:48  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:30:48  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:31:57  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:31:57  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:31:57  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:31:57  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:33:48  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:33:48  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008d03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:33:48  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:33:48  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009203 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:33:48  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:33:48  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:33:48  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:33:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:33:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:33:48  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:33:48  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008d03
+2023-02-25T13:33:48  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:33:48  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0259a000
+2023-02-25T13:33:48  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:33:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:33:49  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:33:50  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009203
+2023-02-25T13:33:50  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x035a6000
+2023-02-25T13:33:50  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:33:50  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:34:20  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:34:20  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:34:20  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:34:20  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:35:34  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:35:34  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a003 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:35:34  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:34  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009b03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:35:34  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:35:34  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:35:34  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:35:34  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:35:34  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:35:34  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:35:35  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a003
+2023-02-25T13:35:35  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:35:35  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0bce5000
+2023-02-25T13:35:35  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:35  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:35  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:35:35  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:35:35  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a003
+2023-02-25T13:35:35  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:35:35  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0bce5000
+2023-02-25T13:35:35  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:35  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:36  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009b03
+2023-02-25T13:35:36  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0c0e8000
+2023-02-25T13:35:36  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:35:36  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:35:51  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:35:51  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a203 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:35:51  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:51  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009103 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:35:51  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:35:51  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:35:51  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:35:51  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:35:51  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:35:51  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:35:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a203
+2023-02-25T13:35:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:35:51  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0c3f3000
+2023-02-25T13:35:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:35:53  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009103
+2023-02-25T13:35:53  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0c7f6000
+2023-02-25T13:35:53  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:35:53  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:36:53  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:36:53  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:36:53  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:36:53  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:38:11  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:38:11  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008703 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:38:11  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:11  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008e03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:38:11  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:38:11  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:38:11  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:38:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:38:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:38:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:38:12  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008703
+2023-02-25T13:38:12  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:38:12  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0b4f1000
+2023-02-25T13:38:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:12  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:38:12  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:38:12 <ERROR> phidget22[dispatchEntry()] : failed to set defaults for PhidgetEncoder: 0x34 - Device not Attached
+2023-02-25T13:38:12  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008703
+2023-02-25T13:38:12  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:38:12  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0b4f1000
+2023-02-25T13:38:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:13  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008e03
+2023-02-25T13:38:13  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0b8f4000
+2023-02-25T13:38:13  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:38:13  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:38:17  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:38:17  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008903 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:38:17  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:17  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008e03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:38:17  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:38:17  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:38:17  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:38:17  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:38:17  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:38:17  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:38:18  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008903
+2023-02-25T13:38:18  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:38:18  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x07cd0000
+2023-02-25T13:38:18  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:18  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:18  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:38:18  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:38:18 <ERROR> phidget22[dispatchEntry()] : failed to set defaults for PhidgetEncoder: 0x34 - Device not Attached
+2023-02-25T13:38:18  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008903
+2023-02-25T13:38:18  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:38:18  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x07cd0000
+2023-02-25T13:38:18  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:18  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:19  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008e03
+2023-02-25T13:38:19  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x080d3000
+2023-02-25T13:38:19  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:38:19  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:38:59  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:38:59  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009c03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:38:59  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:38:59  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008b03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:38:59  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:38:59  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:38:59  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:38:59  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:38:59  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:38:59  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:38:59  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009c03
+2023-02-25T13:38:59  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:38:59  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x03fd7000
+2023-02-25T13:38:59  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:39:00  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:39:00  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:39:01  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008b03
+2023-02-25T13:39:01  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x04be0000
+2023-02-25T13:39:01  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:39:01  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:37  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:44:37  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009a03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:44:37  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:37  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008903 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:44:37  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:37  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:44:37  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:44:37  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:44:37  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:44:37  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:44:38  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009a03
+2023-02-25T13:44:38  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:44:38  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x06a30000
+2023-02-25T13:44:38  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:38  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:38  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:44:38  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:44:38 <ERROR> phidget22[dispatchEntry()] : failed to set defaults for PhidgetEncoder: 0x34 - Device not Attached
+2023-02-25T13:44:38  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009a03
+2023-02-25T13:44:38  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:44:38  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x06a30000
+2023-02-25T13:44:38  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:38  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:38  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:44:38  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:44:38 <ERROR> phidget22[dispatchEntry()] : failed to set defaults for PhidgetEncoder: 0x34 - Device not Attached
+2023-02-25T13:44:38  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009a03
+2023-02-25T13:44:38  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:44:38  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x06a30000
+2023-02-25T13:44:38  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:39  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008903
+2023-02-25T13:44:39  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x07236000
+2023-02-25T13:44:39  <Info> phidget22[processPacketReturnCodes()] : An unexpected PacketID was returned: 0x1c (0xe0 - Success). Probably this packet is from a previous session or detached device.
+2023-02-25T13:44:39  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:39  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:39  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:44:39  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:44:39  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:44:39  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:44:39  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:44:39  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:44:39  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008903
+2023-02-25T13:44:39  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x07236000
+2023-02-25T13:44:39  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:39  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:44  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:44:44  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009c03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:44:44  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:44  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008b03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:44:44  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:44  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:44:44  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:44:44  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:44:44  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:44:44  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:44:45  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009c03
+2023-02-25T13:44:45  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:44:45  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x02eb9000
+2023-02-25T13:44:45  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:45  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:45  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:45  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:46  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008b03
+2023-02-25T13:44:46  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x036bf000
+2023-02-25T13:44:46  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:46  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:51  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:44:51  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008703 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:44:51  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:51  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008a03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:44:51  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:51  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:44:51  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:44:51  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:44:51  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:44:51  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:44:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008703
+2023-02-25T13:44:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:44:51  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0b927000
+2023-02-25T13:44:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:44:52  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008a03
+2023-02-25T13:44:52  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0bd2a000
+2023-02-25T13:44:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:44:53  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:45:26  <Warn> phidget22[waitForPendingPacket()] : Packet tracker waitForPendingPacket timeout (1000ms), Port 1
+2023-02-25T13:47:28  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:47:28  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008903 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:47:28  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:47:28  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008d03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:47:28  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:47:28  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:47:28  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:47:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:47:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:47:28  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:47:28  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008903
+2023-02-25T13:47:28  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:47:28  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0751d000
+2023-02-25T13:47:28  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:47:29  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:47:29  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:47:30  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008d03
+2023-02-25T13:47:30  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x07920000
+2023-02-25T13:47:30  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:47:30  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:47:50  <Warn> phidget22[waitForPendingPacket()] : Packet tracker waitForPendingPacket timeout (1000ms), Port 1
+2023-02-25T13:47:52  <Info> phidget22[processPacketReturnCodes()] : Got a NOTATTACHED response from a VINT device, Port 1
+2023-02-25T13:47:52  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:47:52  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:47:52  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T13:47:52  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:47:52  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:47:52  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:47:52  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008d03
+2023-02-25T13:47:52  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x07920000
+2023-02-25T13:47:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:47:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:53:53  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T13:53:53  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a003 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T13:53:53  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:53:53  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008d03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T13:53:53  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:53:53  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T13:53:53  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T13:53:53  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T13:53:53  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T13:53:53  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T13:53:53  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a003
+2023-02-25T13:53:53  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T13:53:53  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x07811000
+2023-02-25T13:53:53  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:53:53  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:53:54  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T13:53:54  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008d03
+2023-02-25T13:53:54  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x08c20000
+2023-02-25T13:53:54  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:53:55  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:54:23  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:54:23  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T13:54:23  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T13:54:23  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T14:12:59  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T14:12:59  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a103 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T14:12:59  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:12:59  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009e03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T14:12:59  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:12:59  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:12:59  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:12:59  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T14:12:59  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T14:12:59  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T14:12:59  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a103
+2023-02-25T14:12:59  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:12:59  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x07dc0000
+2023-02-25T14:12:59  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:13:00  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:13:00  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T14:13:00  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T14:13:00  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a103
+2023-02-25T14:13:00  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:13:00  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x07dc0000
+2023-02-25T14:13:00  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:13:00  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:13:01  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009e03
+2023-02-25T14:13:01  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x081c3000
+2023-02-25T14:13:01  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:13:01  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:13:11  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T14:13:11  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008d03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T14:13:11  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:13:11  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009e03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T14:13:11  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:13:11  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:13:11  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:13:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T14:13:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T14:13:11  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T14:13:11  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008d03
+2023-02-25T14:13:11  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:13:11  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x02c33000
+2023-02-25T14:13:11  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:13:11  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:13:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:13:12  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009e03
+2023-02-25T14:13:12  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x03036000
+2023-02-25T14:13:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:13:13  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:14:44 <ERROR> phidget22[processPacketReturnCodes()] : Got an unexpected response from a VINT device: 0xfe - <Unknown Code>. This usually indicates firmware problems.
+2023-02-25T14:14:48  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:14:48  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T14:14:48  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:14:48  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T14:14:48  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:14:48  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:14:48  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009e03
+2023-02-25T14:14:48  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x03036000
+2023-02-25T14:14:48  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:14:48  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:16:22  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T14:16:22  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008b03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T14:16:22  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:16:22  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009b03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T14:16:22  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:16:22  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:16:22  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:16:22  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T14:16:22  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T14:16:22  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T14:16:23  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008b03
+2023-02-25T14:16:23  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:16:23  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0b385000
+2023-02-25T14:16:23  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:16:23  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:16:23  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:16:24  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009b03
+2023-02-25T14:16:24  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0bb8b000
+2023-02-25T14:16:24  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:16:24  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:20:50  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T14:20:50  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008e03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T14:20:50  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:50  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009303 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T14:20:50  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:20:50  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:20:50  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:20:50  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T14:20:50  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T14:20:50  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T14:20:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008e03
+2023-02-25T14:20:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:20:51  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x03dc4000
+2023-02-25T14:20:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:51  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T14:20:51  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T14:20:51 <ERROR> phidget22[dispatchEntry()] : failed to set defaults for PhidgetEncoder: 0x34 - Device not Attached
+2023-02-25T14:20:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008e03
+2023-02-25T14:20:51  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:20:51  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x035be000
+2023-02-25T14:20:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:51  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:52  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009303
+2023-02-25T14:20:52  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x03dc4000
+2023-02-25T14:20:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:20:52  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:20:52  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T14:20:52  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T14:20:52  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:20:52  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:20:52  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:20:52  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009303
+2023-02-25T14:20:52  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x03dc4000
+2023-02-25T14:20:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:20:52  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:20:56  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T14:20:56  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009f03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T14:20:56  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:56  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009903 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T14:20:56  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:20:56  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:20:56  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:20:56  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T14:20:56  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T14:20:56  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T14:20:56  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009f03
+2023-02-25T14:20:56  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:20:56  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0ba24000
+2023-02-25T14:20:56  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:56  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:57  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:20:57  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009903
+2023-02-25T14:20:57  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0be27000
+2023-02-25T14:20:57  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:20:58  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:24:05  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T14:24:05  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008d03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T14:24:05  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:05  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009203 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T14:24:05  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:24:05  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:24:05  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:24:05  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T14:24:05  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T14:24:05  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T14:24:05  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008d03
+2023-02-25T14:24:05  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:24:05  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0be01000
+2023-02-25T14:24:05  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:05  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:06  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:06  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009203
+2023-02-25T14:24:06  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0c204000
+2023-02-25T14:24:06  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:24:06  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T14:24:06  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T14:24:06  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:24:06  <Info> phidget22[deviceDetach()] : (Detach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:24:06  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:06  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:06  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:06  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T14:24:06  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: ReadThread exiting normally (signaled by Phidget_close)
+2023-02-25T14:24:10  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-02-25T14:24:10  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008a03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-02-25T14:24:10  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:10  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009c03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-02-25T14:24:10  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:24:10  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-02-25T14:24:10  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-02-25T14:24:10  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-02-25T14:24:10  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-02-25T14:24:10  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:3 S/N:561059
+2023-02-25T14:24:11  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008a03
+2023-02-25T14:24:11  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-02-25T14:24:11  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x043c4000
+2023-02-25T14:24:11  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:11  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:11  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 3 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-02-25T14:24:12  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009c03
+2023-02-25T14:24:12  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x047c7000
+2023-02-25T14:24:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:24:12  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:25:39  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:25:39  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-02-25T14:25:39  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-02-25T14:25:39  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-03-11T14:04:40  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-03-11T14:04:40  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x0000a003 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-03-11T14:04:40  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:04:40  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008d03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-03-11T14:04:40  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:04:40  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-03-11T14:04:40  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-03-11T14:04:40  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-03-11T14:04:40  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-03-11T14:04:40  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x0000a003
+2023-03-11T14:04:40  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-03-11T14:04:40  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0b349000
+2023-03-11T14:04:40  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:04:40  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:04:41  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008d03
+2023-03-11T14:04:41  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0b74c000
+2023-03-11T14:04:41  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:04:42  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:03  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:03  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:03  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-03-11T14:05:03  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-03-11T14:05:20  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-03-11T14:05:20  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00009d03 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-03-11T14:05:20  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:05:20  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008a03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-03-11T14:05:20  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:20  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-03-11T14:05:20  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-03-11T14:05:20  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-03-11T14:05:20  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-03-11T14:05:21  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00009d03
+2023-03-11T14:05:21  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-03-11T14:05:21  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0bc45000
+2023-03-11T14:05:21  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:05:21  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:05:22  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008a03
+2023-03-11T14:05:22  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0c048000
+2023-03-11T14:05:22  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:22  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:22  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-03-11T14:05:22 <ERROR> phidget22[dispatchEntry()] : failed to set defaults for PhidgetStepper: 0x34 - Device not Attached
+2023-03-11T14:05:22  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
+2023-03-11T14:05:22  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008a03
+2023-03-11T14:05:22  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0c048000
+2023-03-11T14:05:22  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:30  <Info> phidget22 : 
+	******************************  Logging Enabled  ******************************
+	* Phidget22 - Version 1.12 - Built Sep 12 2022 15:02:08                       *
+	* Release 1.12 - macOS (64-bit)                                               *
+	*******************************************************************************
+2023-03-11T14:05:30  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008703 (Vid: 0x06c2 Pid: 0x003f Version: 119)
+2023-03-11T14:05:30  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:05:30  <Info> phidget22usb[RawDeviceAdded()] : USB Phidget Attach: 0x00008a03 (Vid: 0x06c2 Pid: 0x003f Version: 307)
+2023-03-11T14:05:30  <Info> phidget22[deviceAttach()] : (Attach) HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:30  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:1 S/N:634722
+2023-03-11T14:05:30  <Info> phidget22[deviceAttach()] : (Attach) STC1003 (4A Stepper Phidget) v114 -> HUB0000 Port:2 S/N:634722
+2023-03-11T14:05:30  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:1 S/N:561059
+2023-03-11T14:05:30  <Info> phidget22[deviceAttach()] : (Attach) ENC1000 (Quadrature Encoder Phidget) v101 -> HUB0000 Port:2 S/N:561059
+2023-03-11T14:05:31  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008703
+2023-03-11T14:05:31  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Using Control Endpoint for Host->Device communication.
+2023-03-11T14:05:31  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059: USB read thread started: 0x0722c000
+2023-03-11T14:05:31  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:05:31  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v119 S/N:561059
+2023-03-11T14:05:32  <Info> phidget22usb[PhidgetUSBOpenHandle()] : Attach: 0x00008a03
+2023-03-11T14:05:32  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: USB read thread started: 0x0762f000
+2023-03-11T14:05:32  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:05:32  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:06:17  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 1 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:06:17  <Info> phidget22[PhidgetHubDevice_setPortMode()] : Setting Port: 2 mode to VINT on HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722
+2023-03-11T14:06:17  <Info> phidget22usb[PhidgetUSBReadPacket()] : ReadPipe returned kIOReturnAborted: This probably means that close was called.
+2023-03-11T14:06:17  <Info> phidget22[PhidgetUSBReadThreadFunction()] : HUB0000 (6-Port USB VINT Hub Phidget) v307 S/N:634722: ReadThread exiting normally (signaled by Phidget_close)
