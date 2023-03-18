@@ -410,11 +410,6 @@ def main():
             file.write(f"\tShoulder Position: {shoulder_position}\t\tElbow Position: {elbow_position}\n")
             file.close()
 
-            #Creating Phidget csv file
-            file = open("PhidgetPosition.csv", "a")
-            file.write(f"{shoulder_position},{elbow_position}\n")
-            file.close()
-
             # Test to prove that motor.getPosition() gives accurate position readings (in degrees) when compared to encoder readings
             #print("      Motor Shoulder Position: " + str(shoulder_motor.getPosition() + 130) + "      Motor Elbow Position: " + str(elbow_motor.getPosition() + 180))
 
