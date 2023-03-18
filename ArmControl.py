@@ -196,10 +196,45 @@ def on_release(key):
         # End program when 'p' is pressed
         if key.char == 'p':
 
-            # Insert shutdown sequence here
-            # moving elbow back to resting position
-            # while(elbow_position != elbow_initial_pos):
-            # elbow_motor.setVelocityLimit(-20)
+            print("p is pressed")
+
+            # Elbow motor shutdown
+            while (elbow_position >= 182 or elbow_position <= 178) and motor_flag_list[2] == True:
+                if elbow_position >= 182:
+                    if (elbow_position -180) >= 20:
+                        elbow_motor.setVelocityLimit(-10 * 3 / 4)
+                    elif (elbow_position -180) >= 10 and (elbow_position -180) <= 20:
+                        elbow_motor.setVelocityLimit(-10 / 2)
+                    elif (elbow_position -180) >= 2 and (elbow_position -180) <= 10:
+                        elbow_motor.setVelocityLimit(-10 / 4)
+                if elbow_position <= 178:
+                    if (elbow_position -180) <= -20:
+                        elbow_motor.setVelocityLimit(10 * 3 / 4)
+                    elif (elbow_position -180) <= -10 and (elbow_position -180) >= -20:
+                        elbow_motor.setVelocityLimit(10 / 2)
+                    elif (elbow_position -180) <= -2 and (elbow_position -180) >= -10:
+                        elbow_motor.setVelocityLimit(10 / 4)
+            elbow_motor.setVelocityLimit(0)
+            print("elbow has been shutdown")
+
+            # Shoulder motor shutdown
+            while (shoulder_position >= 130 or shoulder_position <= 129) and motor_flag_list[1] == True:
+                if shoulder_position >= 130:
+                    if (shoulder_position -130) >= 20:
+                        shoulder_motor.setVelocityLimit(-5 * 3 / 4)
+                    elif (shoulder_position -130) >= 10 and (shoulder_position -130) <= 20:
+                        shoulder_motor.setVelocityLimit(-5 / 2)
+                    elif (shoulder_position -130) >= 0 and (shoulder_position -130) <= 10:
+                        shoulder_motor.setVelocityLimit(-5 / 4)
+                if shoulder_position <= 129:
+                    if (shoulder_position -130) <= -20:
+                        shoulder_motor.setVelocityLimit(5 * 3 / 4)
+                    elif (shoulder_position -130) <= -10 and (shoulder_position -130) >= -20:
+                        shoulder_motor.setVelocityLimit(5 / 2)
+                    elif (shoulder_position -130) <= -1 and (shoulder_position -130) >= -10:
+                        shoulder_motor.setVelocityLimit(5 / 4)
+            shoulder_motor.setVelocityLimit(0)
+            print("Shoulder has been shutdown")
 
             print(f"\nQuitting program...")
 
