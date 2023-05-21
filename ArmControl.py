@@ -26,7 +26,17 @@ claw_motor_flag = False
 
 stop_flag = False
 
+VHubSerial_motors = 634722 #627531 #563134
+VHubSerial_encoders = 561059
 
+smoothing = 0.005   # Time delay (in seconds) for a motor to change from moving to stopped
+
+motors = []
+motors_info = []
+motor_flag_list = [base_motor_flag, shoulder_motor_flag, elbow_motor_flag, wrist_motor_flag, claw_motor_flag]
+encoders = []
+
+def homepose():
     shoulder_test = 1
     while shoulder_test == 1:
         if shoulder_position >= 131 and shoulder_position <= 132:
@@ -107,6 +117,11 @@ def on_press(key):
                 wrist_motor.setVelocityLimit(10)
         elif key.char == 'f' and motor_flag_list[3] == True:
             if not wrist_motor.getIsMoving():
+                wrist_motor.setVelocityLimit(-10)
+
+        # Claw motor movement keys
+        if key.char == 'g' and motor_flag_list[4] == True:
+            if not claw_motor.getIsMoving():
                 claw_motor.setVelocityLimit(10)
         elif key.char == 'h' and motor_flag_list[4] == True:
             if not claw_motor.getIsMoving():
@@ -117,8 +132,15 @@ def on_press(key):
             pass
 
     except AttributeError:
-        print("Special key {
-r.getVelocityLimit()
+        print("Special key {0} pressed".format(key))
+
+
+def on_release(key):
+    global base_motor, shoulder_motor, elbow_motor, wrist_motor, claw_motor, stop_flag
+    try:
+        # Base motor off
+        if (key.char == 'q' or key.char == 'w') and motor_flag_list[0] == True:
+            lim = base_motor.getVelocityLimit()
             base_motor.setVelocityLimit(lim * 3 / 4)
             time.sleep(smoothing / 4)
             base_motor.setVelocityLimit(lim / 2)
@@ -139,8 +161,7 @@ r.getVelocityLimit()
             shoulder_motor.setVelocityLimit(0)
 
         # Elbow motor off
-        if (key.char == 'a' 
-or key.char == 's') and motor_flag_list[2] == True:
+        if (key.char == 'a' or key.char == 's') and motor_flag_list[2] == True:
             lim = elbow_motor.getVelocityLimit()
             elbow_motor.setVelocityLimit(lim * 3 / 4)
             time.sleep(smoothing / 4)
@@ -229,12 +250,14 @@ or key.char == 's') and motor_flag_list[2] == True:
         
 
 # Handlers
-def onAttach_motor(s
-r(self):
+def onAttach_motor(self):
+    print("Motor {0} attached!".format(self.getHubPort()))
+    motor_flag_list[self.getHubPort()] = True
+
+def onAttach_encoder(self):
     print("Encoder {0} attached!".format(self.getHubPort()))
     
 def onDetach(self):
-
     print("Detach!")
     #print("Motor {0} detached!".format(motor_number))
 
