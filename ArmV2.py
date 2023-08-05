@@ -11,7 +11,7 @@
 #   Port 5: Wrist2
 # Wiring the Claw
 #   VINT Hub 2 Port 0
-#   Servo Controller Port 15
+#   Servo Controller Port 0
 
 
 from Phidget22.Phidget import *
