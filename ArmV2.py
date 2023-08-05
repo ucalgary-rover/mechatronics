@@ -270,7 +270,7 @@ def main():
         listener.start()
 
         claw = RCServo()
-        claw.setChannel(15)
+        claw.setChannel(0)
         claw.setHubPort(0)
         claw.setDeviceSerialNumber(VHubSerial_servo)
         claw.openWaitForAttachment(1000)
